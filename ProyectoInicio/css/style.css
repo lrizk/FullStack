@@ -74,29 +74,48 @@ h6 {
 #hola2, [src="img/11641893944_banner_zona_centro.png"] {
     color: greenyellow;
 } */
-
-.carreradigital h1 {
-    background-color: rgba(248, 102, 102, 0.65);
-    color: white;
-    display: block;
+:root{
+    --colorPrincipal:rgb(247, 102, 102);
+    --colorSecundario:rgb(2, 5, 47);
+    --fuentePrincipal:'Open Sans', sans-serif;
 }
 
-.linkrosa {
-    color: #f76666;
-    font-family: 'Open Sans',sans-serif;
+html{
+    font-size: 62.5%;
+}
+
+body{
     font-size: 16px;
-
+    font-family: var(--fuentePrincipal);
 }
 
-.linknegrito {
-    color: #02052f; 
-    font-family: 'Open Sans',sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+.textoprincipal,h1 {
+    background-color: var(--colorPrincipal);
+    color: white;
 }
 
-h2 {
-    color: #02052f;
-    font-weight: bolder;
-    font-family: 'Open Sans',sans-serif;
+.letrarosa {
+    color: var(--colorPrincipal);
+}
+
+.letraazul{
+    color: var(--colorSecundario);
+}
+
+.boton1 {
+    background-color: var(--colorPrincipal);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.boton2{
+    background-color: var(--colorPrincipal);
+    color: white;
+    padding: 2rem 4rem;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
 }
