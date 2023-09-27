@@ -49,11 +49,6 @@ h1 {
     font-size: 4rem;
 }
 
-div {
-    background-color: #f76666;
-    box-shadow: 10px 5px 20px;
-    border-radius: 5px;
-}
 
 /* selector multiple */
 
@@ -62,4 +57,19 @@ div {
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
+}
+
+.fondoazul{
+    background-color: blue;
+    height:  100px;
+}
+
+.fondoamarillo {
+    background-color: yellow;
+    height: 300px;
+}
+
+.contenedor {
+    max-width: 85%;
+    margin: 0 auto 0 auto;
 }

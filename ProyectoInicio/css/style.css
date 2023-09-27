@@ -74,27 +74,167 @@ h6 {
 #hola2, [src="img/11641893944_banner_zona_centro.png"] {
     color: greenyellow;
 } */
-:root{
-    --colorPrincipal:rgb(247, 102, 102);
-    --colorSecundario:rgb(2, 5, 47);
-    --fuentePrincipal:'Open Sans', sans-serif;
+:root {
+    --colorPrincipal: rgb(247, 102, 102);
+    --colorSecundario: rgb(2, 5, 47);
+    --fuentePrincipal: 'Open Sans', sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 16px;
     font-family: var(--fuentePrincipal);
 }
 
-.textoprincipal,h1 {
-    background-color: var(--colorPrincipal);
-    color: white;
+/* ESTILOS GENERICOS */
+
+.contenedor{
+    max-width: 87%;
+    margin: 0 auto 0 auto;
+    
 }
 
-.letrarosa {
+
+/* ESTILOS DEL MAIN */
+
+.fondoMain {
+    background-image: url(../img/11641893944_banner_zona_centro.png);
+    background-size: cover;
+    color: #Ffffff;
+    background-position: top left;
+    padding: 80px 0 180px 0;
+}
+
+.margenderecho {
+    margin-right: 30%;
+}
+
+h1 {
+    background-color: rgb(247, 102, 102, 0.65);
+    font-weight: 800;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    padding: 35px;
+
+}
+
+.fondoMain a {
+    background-color: #000;
+    color: #Ffffff;
+    border-radius: 0px;
+    padding: 24px 94px;
+    text-transform: uppercase;
+    font-family: "DinBold", sans-serif;
+    font-size: 1.40rem;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.flexMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ESTILOS DE SECCION LOGOS OFICIALES */
+
+.logosoficiales {
+    background-color: #Ffffff;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -110px;
+    border-radius: 15px;
+}
+
+/* SECCION ESTILOS DE CURSOS */
+
+.cursos>h3{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    color: var(--colorPrincipal);
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin: 40px 0px;
+}
+
+.cursos>h2{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    color: var(--colorSecundario);
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+
+.botonescurso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.botonrosa{
+    background-color: var(--colorPrincipal);
+    padding: 15px 30px 15px 30px;
+    color: #Ffffff;
+    font-family: var(--fuentePrincipal);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.botonblanco {
+    background-color: #Ffffff;
+    padding: 15px 30px 15px 30px;
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+/* ESTILOS DE SECCION PIDENOSLO */
+
+
+/* ESTILOS SECCION VIDEO  */
+
+
+/* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
+
+
+/* ESTILOS LOCALIZACION */
+
+.localizaciones {
+    background-color: #000;
+}
+
+/* ESTILOS DUDAS Y NOSOTROS */
+
+
+/* ESTILOS SECCION CONTACTOS */
+
+
+/* ESTILOS FOOTER */
+
+
+/* ESTILOS FORM */
+
+/* .letrarosa {
     color: var(--colorPrincipal);
 }
 
@@ -118,4 +258,4 @@ body{
     border-radius: 50px;
     font-size: 18px;
     font-weight: 700;
-}
+} */
