@@ -91,10 +91,10 @@ body {
 
 /* ESTILOS GENERICOS */
 
-.contenedor{
+.contenedor {
     max-width: 87%;
     margin: 0 auto 0 auto;
-    
+
 }
 
 
@@ -134,6 +134,13 @@ h1 {
 
 }
 
+.fondoMain a:hover{
+    background-color: #Ffffff;
+    color: var(--colorPrincipal);
+    border-color: var(--colorPrincipal);
+    border: 2px solid;
+}
+
 .flexMain {
     display: flex;
     flex-direction: row;
@@ -144,7 +151,7 @@ h1 {
 
 .logosoficiales {
     background-color: #Ffffff;
-    display:  flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -156,7 +163,7 @@ h1 {
 
 /* SECCION ESTILOS DE CURSOS */
 
-.cursos>h3{
+.cursos>h3 {
     text-align: center;
     font-family: var(--fuentePrincipal);
     text-transform: uppercase;
@@ -166,7 +173,7 @@ h1 {
     margin: 40px 0px;
 }
 
-.cursos>h2{
+.cursos>h2 {
     text-align: center;
     font-family: var(--fuentePrincipal);
     text-transform: uppercase;
@@ -176,42 +183,141 @@ h1 {
     margin-bottom: 70px;
 }
 
-.botonescurso{
+.botonescurso {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    
+    margin-bottom: 105px;
+
 }
 
-.botonrosa{
+.botonrosa {
     background-color: var(--colorPrincipal);
-    padding: 15px 30px 15px 30px;
+    padding: 12px 24px;
     color: #Ffffff;
     font-family: var(--fuentePrincipal);
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 0.5rem;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
 }
 
 .botonblanco {
     background-color: #Ffffff;
-    padding: 15px 30px 15px 30px;
+    padding: 12px 24px;
     color: var(--colorSecundario);
     font-family: var(--fuentePrincipal);
+    border: 1px solid;
+    border-color: var(--colorPrincipal);
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 0.5rem;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
 }
+
+
+.tiposdecursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.tiposdecursos>div {
+    color: #Ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.7rem;
+    font-family: var(--fuentePrincipal);
+    min-height: 300px;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    flex: 2;
+    max-width: 50%;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.marketing {
+    background-image: url(../img/Curso-marketing-digital-centro.png);
+    margin-right: 15px;
+    margin-bottom: 22px;
+}
+
+.videojuegos {
+    background-image: url(../img/Curso-programacion-videojuegos-centro.png);
+    margin-left: 15px;
+    margin-bottom: 22px;
+}
+
+.tiposdecursos a {
+    color: var(--colorPrincipal);
+    font-size: 1.4rem;
+    font-family: "DinBold", sans-serif;
+    padding: 20px 60px;
+    background-color: #Ffffff;
+    border: 2px solid #Ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.tiposdecursos a:hover{
+    background-color: var(--colorPrincipal);
+    text-decoration: underline;
+    color: #Ffffff;
+}
+
+
 
 /* ESTILOS DE SECCION PIDENOSLO */
 
+.pidenoslo {
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pidenoslo h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--colorSecundario);
+    font-weight: 800;
+    margin-bottom: 42px;
+
+}
+
+.pidenoslo a {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #Ffffff;
+    text-decoration: none;
+    background-color: var(--colorPrincipal);
+    border-radius: 96px;
+    padding: 20px 40px;
+
+}
+
+.pidenoslo a:hover{
+    background-color: var(--colorSecundario);
+    text-decoration: underline;
+}
 
 /* ESTILOS SECCION VIDEO  */
+
 
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
