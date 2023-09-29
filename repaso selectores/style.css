@@ -1,6 +1,6 @@
 /* selector de elementos */
 
-h1 {
+/* h1 {
     color: green;
     text-transform: uppercase;
     text-align: center;
@@ -9,7 +9,7 @@ h1 {
 
 /* selector de clase */
 
-.selectclase {
+/* .selectclase {
     color: red;
     text-transform: uppercase;
     text-align: center;
@@ -52,16 +52,17 @@ h1 {
 
 /* selector multiple */
 
-.selectormultiple h3, .selectormultiple h6 {
+.selectormultiple h3,
+.selectormultiple h6 {
     color: purple;
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
 }
 
-.fondoazul{
+.fondoazul {
     background-color: blue;
-    height:  100px;
+    height: 100px;
 }
 
 .fondoamarillo {
@@ -72,4 +73,107 @@ h1 {
 .contenedor {
     max-width: 85%;
     margin: 0 auto 0 auto;
+}
+
+.cadenadescendente h2 {
+    background-color: blue;
+    height: 100px;
+}
+
+.selectores>div>h2 {
+    background-color: blue;
+    height: 100px;
+}
+
+
+.ejerciciomargin {
+    margin: 50px;
+    background-color: yellow;
+    height: 200PX;
+}
+
+.ejerciciopadding {
+    padding: 50px;
+    background-color: yellowgreen;
+    height: 200PX;
+    border: 30px solid;
+}
+
+.displayblock>p {
+    background-color: palevioletred;
+}
+
+.displayblock a {
+    background-color: aquamarine;
+}
+
+.displayblock h1 {
+    background-color: bisque;
+}
+
+.displayblock h3 {
+    background-color: blue;
+}
+
+.displayblock h6 {
+    background-color: brown;
+}
+
+.displayblock div {
+    background-color: cadetblue;
+}
+
+
+
+.displayinline p {
+    background-color: palevioletred;
+    display: inline;
+}
+
+.displayinline a {
+    background-color: aquamarine;
+    display: block;
+}
+
+.displayinline h1 {
+    background-color: bisque;
+    display: inline;
+}
+
+.displayinline h3 {
+    background-color: blue;
+    display: inline;
+}
+
+.displayinline h6 {
+    background-color: brown;
+    display: inline;
+}
+
+.displayinline div {
+    background-color: cadetblue;
+    display: inline;
+}
+
+.seccionrow {
+    width: 300px;
+    height: 300px;
+    color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: green;
+
+}
+
+.seccioncolumn {
+    width: 300px;
+    height: 300px;
+    color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: teal;
 }
