@@ -471,14 +471,14 @@ h1 {
 
 /* ESTILOS LOCALIZACION */
 
-.localizaciones{
+.localizaciones {
     background-color: #000;
     color: #Ffffff;
     text-transform: uppercase;
     padding: 100px 0px;
 }
 
-.localizaciones>div{
+.localizaciones>div {
     display: flex;
     font-family: var(--fuentePrincipal);
     background-color: #000;
@@ -488,43 +488,54 @@ h1 {
     justify-content: flex-start;
 }
 
-.localizaciones h5{
+.localizaciones h5 {
     font-weight: 100;
 }
 
-.madridIzq{
+.madridIzq {
     flex: 1;
     max-width: 25%;
 }
 
-.madridDer{
+.madridDer {
     flex: 1;
     max-width: 25%;
 }
 
 /* ESTILOS DUDAS Y NOSOTROS */
 
-.fondocontactar{
+.fondocontactar {
     background-color: var(--colorPrincipal);
     color: #Ffffff;
-    font-family: var(--fuentePrincipal);
+    padding-top: 90px;
+    padding-bottom: 130px;
     text-transform: uppercase;
-    padding: 90px 0px 70px;
+    font-family: var(--fuentePrincipal);
 }
 
-.cajasContacto{
+.fondocontactar .contenedor>h3 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    margin-bottom: 22px;
+}
+
+
+.fondocontactar .contenedor>h2 {
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.cajasContacto {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 40px 40px 40px 100px;
-    color: var(--colorSecundario);
 }
 
-.cajasContacto img{
-    margin-right: 20px;
+.cajasContacto img {
+    margin-right: 15px;
 }
 
-.cajaLlamar, .cajaCorreo{
+.cajaLlamar,
+.cajaCorreo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -532,11 +543,30 @@ h1 {
     max-width: 50%;
     padding: 20px;
     margin-right: 15px;
-    border-radius: 0.5rem;
+    border-radius: 0.55rem;
     background-color: #Ffffff;
+    /* color: var(--colorSecundario);
     font-size: 1.6rem;
     font-weight: 800;
-    text-transform: uppercase;
+    text-transform: uppercase; */
+
+}
+
+.cajasContacto h4 {
+    color: var(--colorSecundario);
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.cajasContacto a {
+    color: var(--colorPrincipal);
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: lowercase;
+    text-decoration: none;
+
 }
 
 
