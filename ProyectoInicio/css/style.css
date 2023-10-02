@@ -134,7 +134,7 @@ h1 {
 
 }
 
-.fondoMain a:hover{
+.fondoMain a:hover {
     background-color: #Ffffff;
     color: var(--colorPrincipal);
     border-color: var(--colorPrincipal);
@@ -271,7 +271,7 @@ h1 {
     display: inline-block;
 }
 
-.tiposdecursos a:hover{
+.tiposdecursos a:hover {
     background-color: var(--colorPrincipal);
     text-decoration: underline;
     color: #Ffffff;
@@ -311,14 +311,14 @@ h1 {
 
 }
 
-.pidenoslo a:hover{
+.pidenoslo a:hover {
     background-color: var(--colorSecundario);
     text-decoration: underline;
 }
 
 /* ESTILOS SECCION VIDEO  */
 
-.seccionvideo{
+.seccionvideo {
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
@@ -326,35 +326,218 @@ h1 {
 
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
-.cajaizquierda{
-}
 
-
-.participantes h3{
+.participantes h3 {
     color: var(--colorPrincipal);
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 800;
 }
 
-.participantes h2{
-    color: var(--colorSecundario);
-    font-size: 2.6rem;
+.participantes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.participantes>div {
+    flex: 1;
+    max-width: 50%;
+
+}
+
+.paraQuienIzq {
+    margin-right: 15px;
+}
+
+
+.participantes p {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.paraQuienIzq h2 {
+    font-size: 2.7rem;
+    font-family: var(--fuentePrincipal);
     font-weight: 800;
-    margin-top: 22px;
+    color: var(--colorSecundario);
     margin-bottom: 22px;
+}
+
+.participantes span {
+    font-weight: 800;
+}
+
+.paraQuienIzq h4 {
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+.paraQuienIzq a {
+    color: var(--colorPrincipal);
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.paraQuienIzq h5 {
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--colorSecundario);
+}
+
+.paraQuienIzq .botonInfografia {
+    background-color: var(--colorPrincipal);
+    color: #Ffffff;
+    text-decoration: none;
+    padding: 20px 40px;
+    display: inline-block;
+}
+
+.paraQuienDer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    margin-top: 60px;
+}
+
+.paraQuienDerSup {
+    background-color: var(--colorPrincipal);
+    padding: 50px 30px;
+}
+
+.paraQuienDerSup h2 {
+    font-size: 2.7rem;
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    color: #Ffffff;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+
+.paraQuienDerSup .destacarAzul {
+    color: var(--colorSecundario);
+}
+
+.paraQuienDerSup span {
+    color: #000;
+}
+
+.paraQuienIzqInf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -50px;
+    margin-right: 30px;
+
+}
+
+.paraQuienIzqInf img {
+    /* flex: 1; */
+    width: 50px;
+}
+
+
+.paraQuienIzqInf h4 {
+    flex: 1;
+    max-width: 50%;
+    background-color: #000;
+    color: #Ffffff;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    font-size: 15px;
+    font-weight: 200;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.paraQuienIzqInf span {
+    color: var(--colorPrincipal);
 }
 
 /* ESTILOS LOCALIZACION */
 
-.localizaciones {
+.localizaciones{
     background-color: #000;
+    color: #Ffffff;
+    text-transform: uppercase;
+    padding: 100px 0px;
+}
+
+.localizaciones>div{
+    display: flex;
+    font-family: var(--fuentePrincipal);
+    background-color: #000;
+    color: #Ffffff;
+    text-transform: uppercase;
+    padding: 50px 0px;
+    justify-content: flex-start;
+}
+
+.localizaciones h5{
+    font-weight: 100;
+}
+
+.madridIzq{
+    flex: 1;
+    max-width: 25%;
+}
+
+.madridDer{
+    flex: 1;
+    max-width: 25%;
 }
 
 /* ESTILOS DUDAS Y NOSOTROS */
 
+.fondocontactar{
+    background-color: var(--colorPrincipal);
+    color: #Ffffff;
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    padding: 90px 0px 70px;
+}
 
-/* ESTILOS SECCION CONTACTOS */
+.cajasContacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 40px 40px 100px;
+    color: var(--colorSecundario);
+}
+
+.cajasContacto img{
+    margin-right: 20px;
+}
+
+.cajaLlamar, .cajaCorreo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    margin-right: 15px;
+    border-radius: 0.5rem;
+    background-color: #Ffffff;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
 
 
 /* ESTILOS FOOTER */
