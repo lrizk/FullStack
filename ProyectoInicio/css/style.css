@@ -89,13 +89,103 @@ body {
     font-family: var(--fuentePrincipal);
 }
 
+/* ESTILOS DEL header */
+
+.enlacesHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.enlaceslogin{
+    display: flex;
+    flex-direction: column;
+}
+
+.enlacesSuperior{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.enlacesSuperior a{
+    color: var(--colorPrincipal);
+    font-family: var(--fuentePrincipal);
+    font-size: 1.7rem;
+    font-weight: 200;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+}
+
+.enlacesSuperior a:hover{
+    text-decoration: underline;
+}
+
+.enlacesInferior a{
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.enlacesInferior a:hover{
+    text-decoration: underline;
+}
+
+.botoninformate{
+    background-color: var(--colorPrincipal);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #Ffffff !important;
+}
+
+.botoninformate:hover{
+    background-color: var(--colorSecundario);
+    text-decoration: none !important;
+}
+
+.logoTuCarrera{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 /* ESTILOS GENERICOS */
 
 .contenedor {
     max-width: 87%;
     margin: 0 auto 0 auto;
-
 }
+
+@media (min-width:1140px) {
+    .contenedor {
+        max-width: 87%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1140px)(min-width:768px) {
+    .contenedor {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:768px) {
+    .contenedor {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
 
 
 /* ESTILOS DEL MAIN */
@@ -571,6 +661,43 @@ h1 {
 
 
 /* ESTILOS FOOTER */
+
+.enlacesFooter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.enlacesSuperiores a {
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.enlacesSuperiores .cZonaCentro {
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+
+.enlacesLegales {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: inline;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+}
+
+.enlacesLegales .preguntasF,
+.cookies,
+.privacidad,
+.avisoLegal {
+    margin-right: 50px;
+}
 
 
 /* ESTILOS FORM */

@@ -177,3 +177,116 @@
     align-items: end;
     background-color: teal;
 }
+
+.seccion1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.repaso1 {
+    background-color: aqua;
+    display: flex;
+    width: 20%;
+    margin-left: 15PX;
+    
+}
+
+.repaso2 {
+    background-color: brown;
+    display: flex;
+    width: 30%;
+    margin-left: 15PX;
+}
+
+.repaso3 {
+    background-color: cadetblue;
+    display: flex;
+    margin-left: 15PX;
+    width: 50%;
+}
+
+.seccion2 {
+    display: block;
+}
+
+.repaso1punto2 {
+    background-color: orchid;
+    height: 100px;
+}
+
+.repaso2punto2 {
+    background-color: deeppink;
+    height: 200px;
+}
+
+p{
+    margin: 0px;
+}
+
+.seccion3{
+    display: flex;
+}
+
+.primerdiv{
+    background-color: darksalmon;
+    width: 40%;
+
+}
+
+.segundodiv{
+    background-color: indianred;
+    width: 60%;
+    display: flex;
+}
+
+.segundodiv .parrafo{
+    background-color: darksalmon;
+    width: 30%;
+    margin: 10px 10px;
+}
+
+.segundodiv p{
+    width: 70%;
+    background-color: bisque;
+    margin: 10px 10px;
+}
+
+h3{
+ height: 500px;
+ background-color:antiquewhite
+}
+
+@media (max-width:360px){
+    h3{
+        background-color: darkgreen;
+    }
+}
+
+
+@media (min-width:360px) and (max-width:616px){
+    h3{
+        background-color: indianred;
+    }
+}
+
+
+@media (min-width:616px)and (max-width:933px){
+    h3{
+        background-color: paleturquoise;
+    }
+}
+
+
+@media (min-width:933px) and (max-width:1131px){
+    h3{
+        background-color: darkkhaki;
+    }
+}
+
+
+@media (min-width:1131px){
+    h3{
+        background-color: chocolate;
+    }
+}
