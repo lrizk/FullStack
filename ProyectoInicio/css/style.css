@@ -99,9 +99,31 @@ body {
     margin-bottom: 20px;
 }
 
-.enlaceslogin{
+
+.enlacesLogin{
     display: flex;
     flex-direction: column;
+    max-width: 55%;
+}
+
+.logoTuCarrera{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    max-width: 45%;
+}
+
+@media (max-width:768px) {
+    .enlacesHeader{
+        flex-direction: column;
+    }
+    .logoTuCarrera, .enlacesLogin{
+        max-width: 100%;
+        align-items: center;
+    }
+    .logoTuCarrera{
+        margin-top: 30px;
+    }
 }
 
 .enlacesSuperior{
@@ -152,22 +174,18 @@ body {
     text-decoration: none !important;
 }
 
-.logoTuCarrera{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
+
 
 /* ESTILOS GENERICOS */
 
 .contenedor {
-    max-width: 87%;
+    max-width: 88%;
     margin: 0 auto 0 auto;
 }
 
 @media (min-width:1140px) {
     .contenedor {
-        max-width: 87%;
+        max-width: 88%;
         margin: 0 auto;
     }
 }
@@ -202,6 +220,12 @@ body {
     margin-right: 30%;
 }
 
+@media (max-width:1140px) {
+    .margenderecho {
+        margin-right: 0%;
+    }
+}
+
 h1 {
     background-color: rgb(247, 102, 102, 0.65);
     font-weight: 800;
@@ -210,6 +234,10 @@ h1 {
     padding: 35px;
 
 }
+
+/* h1::after{
+    content: "hola buenas tardes"
+} */
 
 .fondoMain a {
     background-color: #000;
@@ -222,6 +250,10 @@ h1 {
     font-weight: 700;
     text-decoration: none;
 
+}
+
+@media (max-width:768px){
+    .fondomain a{ padding: 24px 70px;}
 }
 
 .fondoMain a:hover {
@@ -249,6 +281,31 @@ h1 {
     padding-bottom: 30px;
     margin-top: -110px;
     border-radius: 15px;
+}
+
+@media (max-width:1140px) and (min-width:768px){
+    /* .logosoficiales{
+        padding: 20px 10px;
+    } */
+    [src="img/Logos-oficiales.png"]{
+        max-width: 70%;
+    }
+
+    [src="../ProyectoInicio/img/Logo-Adecco.png"]{
+        max-width: 30%;
+    }
+}
+
+@media (max-width:768px) {
+    .logosoficiales{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   .logosoficiales img{
+    max-width: 90%;
+    padding: 20px;
+   }
 }
 
 /* SECCION ESTILOS DE CURSOS */
@@ -318,6 +375,12 @@ h1 {
     margin-bottom: 120px;
 }
 
+@media (max-width:768px){
+    .tiposdecursos{
+        flex-direction: column;
+    }
+}
+
 .tiposdecursos>div {
     color: #Ffffff;
     text-transform: uppercase;
@@ -336,6 +399,8 @@ h1 {
     justify-content: space-between;
 }
 
+
+
 .marketing {
     background-image: url(../img/Curso-marketing-digital-centro.png);
     margin-right: 15px;
@@ -347,6 +412,18 @@ h1 {
     margin-left: 15px;
     margin-bottom: 22px;
 }
+
+@media (max-width:768px){
+    .marketing{
+    margin-right: 0px;
+    max-width: 100% !important;
+    }
+    .videojuegos{
+        margin-left: 0px;
+        max-width: 100% !important;
+    }
+}
+
 
 .tiposdecursos a {
     color: var(--colorPrincipal);
@@ -414,6 +491,22 @@ h1 {
     margin-bottom: 70px;
 }
 
+@media (max-width:1140px) {
+    .seccionvideo iframe{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width:768px) {
+    .seccionvideo iframe{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+
 /* ESTILOS SECCION PARA QUIEN SON ESTOS CURSOS */
 
 
@@ -430,10 +523,23 @@ h1 {
     margin-bottom: 100px;
 }
 
+@media (max-width:1140px){
+    .participantes{
+        flex-direction: column;
+    }
+}
+
 .participantes>div {
     flex: 1;
     max-width: 50%;
 
+}
+
+@media (max-width:1140px){
+    .participantes>div{
+        flex: 1;
+        max-width: 100%;
+    }
 }
 
 .paraQuienIzq {
@@ -592,6 +698,33 @@ h1 {
     max-width: 25%;
 }
 
+@media (max-width:1140px) {
+   .madrid>div{
+        max-width: 50%;
+    }
+}
+
+@media (max-width:1140px) {
+    .madrid .madridDer{
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .localizaciones .madrid{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .madrid>.madridDer{
+        margin-left: 0px;
+}
+
+/* TERMINAR ESTE DE ARRIBA EN CASA, estilos de la caja de localizacion para MOVIL!!! */
+
 /* ESTILOS DUDAS Y NOSOTROS */
 
 .fondocontactar {
@@ -620,6 +753,12 @@ h1 {
     flex-direction: row;
 }
 
+@media (max-width:1140px) {
+    .cajasContacto{
+        flex-direction: column;
+    } 
+}
+
 .cajasContacto img {
     margin-right: 15px;
 }
@@ -640,6 +779,13 @@ h1 {
     font-weight: 800;
     text-transform: uppercase; */
 
+}
+
+@media (max-width:1140px) {
+    .cajaLlamar, .cajaCorreo{
+        max-width: 100%;
+        margin: 10px 0px;
+    }
 }
 
 .cajasContacto h4 {

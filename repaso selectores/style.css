@@ -33,6 +33,7 @@
 
 /* selector cadena ascendente */
 
+
 .seccioncadena h4 {
     color: pink;
     text-transform: uppercase;
@@ -290,3 +291,24 @@ h3{
         background-color: chocolate;
     }
 }
+
+.ejercicioAR{
+    height: 500px;
+    background-color: cornflowerblue;
+    position: relative;
+}
+
+.ejercicioAR div{
+    width: 30px;
+    height: 30px;
+    background-color: chartreuse;
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    -webkit-box-shadow: 10px 10px 31px 32px rgba(67,135,19,1);
+-moz-box-shadow: 10px 10px 31px 32px rgba(67,135,19,1);
+box-shadow: 10px 10px 31px 32px rgba(67,135,19,1);
+Copy Text
+}
+
+
