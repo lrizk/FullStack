@@ -190,7 +190,7 @@ body {
     }
 }
 
-@media (max-width:1140px)(min-width:768px) {
+@media (max-width:1140px) and (min-width:768px) {
     .contenedor {
         max-width: 80%;
         margin: 0 auto;
@@ -667,7 +667,7 @@ h1 {
 
 /* ESTILOS LOCALIZACION */
 
-.localizaciones {
+/* .localizaciones {
     background-color: #000;
     color: #Ffffff;
     text-transform: uppercase;
@@ -696,6 +696,19 @@ h1 {
 .madridDer {
     flex: 1;
     max-width: 25%;
+} */
+
+.madrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+ .localizaciones {
+    background-color: #000;
+    color: #Ffffff;
+    text-transform: uppercase;
+    padding: 100px 0px;
 }
 
 @media (max-width:1140px) {
@@ -722,8 +735,7 @@ h1 {
     .madrid>.madridDer{
         margin-left: 0px;
 }
-
-/* TERMINAR ESTE DE ARRIBA EN CASA, estilos de la caja de localizacion para MOVIL!!! */
+}
 
 /* ESTILOS DUDAS Y NOSOTROS */
 
@@ -844,32 +856,3 @@ h1 {
 .avisoLegal {
     margin-right: 50px;
 }
-
-
-/* ESTILOS FORM */
-
-/* .letrarosa {
-    color: var(--colorPrincipal);
-}
-
-.letraazul{
-    color: var(--colorSecundario);
-}
-
-.boton1 {
-    background-color: var(--colorPrincipal);
-    color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.boton2{
-    background-color: var(--colorPrincipal);
-    color: white;
-    padding: 2rem 4rem;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: 700;
-} */
