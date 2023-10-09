@@ -355,3 +355,51 @@ Copy Text
 .ejericioRepeat div{
     border: 2px solid fuchsia;
 }
+
+.dropGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 500px;
+}
+
+.caja1{
+    background-color: aqua;
+    border: 1px solid black;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.caja2{
+    background-color: bisque;
+    border: 1px solid black;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.caja3{
+    background-color: blueviolet;
+    border: 1px solid black;
+    grid-column: 2/5;
+    grid-row: 3/5;
+}
+
+.caja4{
+    background-color: brown;
+    border: 1px solid black;
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.caja5{
+    background-color: cadetblue;
+    border: 1px solid black;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+/* .nuevoDropGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}  PRACTICA */
