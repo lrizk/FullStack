@@ -1,0 +1,51 @@
+:root{
+    --colorPrincipal: #7858DD;
+    --colorSecundario: #EF9614; 
+    
+}
+
+/* ESTILOS GENERICOS */
+
+.contenedor{
+    max-width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+/* ESTILOS DEL HEADER */
+
+[src="../ProyectoPersonal/img/FitSelf-11.png"]{
+    width: 100px;
+    height: 100px;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    
+}
+
+.seccionHeader{
+    color: var(--colorPrincipal);
+    text-transform: uppercase;
+    display: grid;
+    height: 300px;
+    width: 650px;
+    grid: 1fr 1fr / 1fr 1fr 1fr 1fr
+}
+
+.acercaDe{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.certificaciones{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.contacto{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.asesorias{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
