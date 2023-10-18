@@ -52,7 +52,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebab52', end
     justify-content: flex-end;
     align-items: center;
     max-width: 75%;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .enlacesHeader a{
@@ -126,8 +126,25 @@ p{
     font-family: var(--fuentePrimaria);
 }
 
+@media () {
+    
+}
+
+/* ESTILOS DE SECCION BENEFICIOS */
+
+.beneficios h2{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: var(--fuentePrimaria);
+    font-weight: 700;
+    color: var(--colorPrincipal);
+}
+
 .gridBeneficios{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    
 }
