@@ -58,7 +58,7 @@ if (estacionActual === "otoño") {
     console.log("Estamos en primavera");
 } else if (estacionActual === "verano") {
     console.log("Estamos en verano");
-} else{
+} else {
     console.log("No existe")
 }
 
@@ -71,27 +71,27 @@ if (estacionActual === "otoño") {
 
 // CREAMOS UNA VARIABLE QUE SE LLAME notaExamen
 
-let notaExamen=8;
+let notaExamen = 8;
 
-if(notaExamen>=9){
+if (notaExamen >= 9) {
     console.log("SOBRESALIENTE");
-} else if(notaExamen>=7){
+} else if (notaExamen >= 7) {
     console.log("NOTABLE");
-} else if(notaExamen>=5){
+} else if (notaExamen >= 5) {
     console.log("SUFICIENTE");
-} else if(notaExamen<5){
+} else if (notaExamen < 5) {
     console.log("SUSPENSO");
 }
 
 // OTRA FORMA DE HACERLO USANDO EL 'OR'
 
-if(notaExamen==9||notaExamen==10){
+if (notaExamen == 9 || notaExamen == 10) {
     console.log("SOBRESALIENTE");
-} else if(notaExamen==7||notaExamen==8){
+} else if (notaExamen == 7 || notaExamen == 8) {
     console.log("NOTABLE");
-} else if(notaExamen==5||notaExamen==6){
+} else if (notaExamen == 5 || notaExamen == 6) {
     console.log("SUFICIENTE");
-} else if(notaExamen<5){
+} else if (notaExamen < 5) {
     console.log("SUSPENSO");
 }
 
@@ -99,61 +99,132 @@ if(notaExamen==9||notaExamen==10){
 
 // let metodoPago= prompt("Introduce tu metodo de pago","Escriba aqui");
 
-let metodoPago="efectivo"
+let metodoPago = "efectivo"
 
-switch(metodoPago){
+switch (metodoPago) {
     case "tarjeta": console.log("Pago con tarjeta");
-    break; //CIERRE DE UN CASO
+        break; //CIERRE DE UN CASO
     case "bizum": console.log("pagaste con bizum");
-    break;
+        break;
     case "efectivo": console.log("pagaste con efectivo");
     default: console.log("pendiente de pago");
-    break;
+        break;
 }
 
-let numEj=13;
+let numEj = 13;
 
 //LA ECUACION QUE SE QUIERA REALIZAR VA DESPUES DEL IF DENTRO DEL ()
 
-if(numEj*numEj<100){
+if (numEj * numEj < 100) {
     console.log("Numero menor de 100");
-} else if(numEj*numEj<200){
+} else if (numEj * numEj < 200) {
     console.log("Numero menor de 200")
-} else{
+} else {
     console.log("No cumple con las anteriores")
 }
 
 
 //ELSE IF EN UNA FUNCION
-function multiplo(x){
+function multiplo(x) {
 
-    if(x*x<100){
+    if (x * x < 100) {
         console.log("Numero menor de 100");
-    } else if(x*x<200){
+    } else if (x * x < 200) {
         console.log("Numero menor de 200")
-    } else{
+    } else {
         console.log("No cumple con las anteriores")
     }
 }
 
 multiplo(5);
 
-let queNumeroEs=parseInt(prompt("Escribe aqui tu numero"));
+// let queNumeroEs=parseInt(prompt("Escribe aqui tu numero"));
 
 //LA ECUACION SIEMPRE VA DONDE ESTA LA VARIABLE QUE SE EVALUA
 
-switch(queNumeroEs+10){
-    case 9: console.log("tu numero es 9");
-    break;
-    case 12: console.log("Tu numero es 12");
-    break;
-    case 15: console.log("Tu numero es 15");
-    break;
-    case 100: console.log("Tu numero es 100");
-    break;
-    default: console.log("Resto de posibilidades");
-    break;
-}
+// switch(queNumeroEs+10){
+//     case 9: console.log("tu numero es 9");
+//     break;
+//     case 12: console.log("Tu numero es 12");
+//     break;
+//     case 15: console.log("Tu numero es 15");
+//     break;
+//     case 100: console.log("Tu numero es 100");
+//     break;
+//     default: console.log("Resto de posibilidades");
+//     break;
+// }
 
 //SWITCH EVALUA CASOS CON VALORES CONCRETOS (CASO 1, CASO 2)
 //ELSE IF PERMITE UTILIZAR RANGOS DE VALORES (MAYOR QUE, MENOR QUE)
+
+// ITERADORES/BUCLES
+
+
+//IRA EJECUTANDO EL CODIGO SIEMPRE QUE SE CUMPLA LA CONDICION
+
+// for (let i=0;i<=3;i++){
+//     console.log(i+1);
+// }
+
+// for (let i=300;i<=200;i++){
+//     console.log(i);
+// }
+
+// for (let i=2;i<=49;i+=2){
+//     console.log(i);
+// }
+
+for (let i = 100; i >= 0; i -= 5) {
+    console.log(i);
+}
+
+for (let x= 1;x<21;x++) {
+    if (x % 2 === 0) {
+        console.log(x);
+    }
+}
+
+let arrayNumero=[1,22,37,4,5,6,7,8,9,66,88];
+
+for (let a=0;a<arrayNumero.length;a++){
+    console.log(arrayNumero[a]);
+}
+
+function regresion(x){
+    for (let i=x;i>=0;i--){
+        console.log(i);
+    }
+}
+
+regresion(10);
+
+
+let totalAcum=0;
+
+function acumulacion(n){
+    for (let i=0;i<=n;i++){
+        totalAcum=totalAcum+i;
+    }
+    console.log(totalAcum);
+}
+
+acumulacion(6);
+
+
+
+//FUNCION QUE DADO ARGUMENTO ME CALCULE LA MEDIA DE LA SUMA DE TODOS LOS VALORES, USAR WHILE
+
+let i=0;
+let totalAcum2=0;
+
+function media(n){
+
+    while(i<=6){
+        totalAcum2=totalAcum2+i;
+        i++;
+    }
+    console.log(totalAcum2/(n+1));
+}
+
+media(6);
