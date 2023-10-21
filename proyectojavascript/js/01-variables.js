@@ -35,3 +35,10 @@ console.log("comentario zapatos:",zapatos);
 const constante = "valor constante"
 
 console.log("comentario constante:", constante);
+
+const global=0;
+
+console.log("comentario global",global);
+
+let computadora="windows";
+console.log("esta computadora tiene un sistema operativo:",computadora);

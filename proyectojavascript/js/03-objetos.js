@@ -1,10 +1,14 @@
 "use strict"
 
+//LOS OBJETOS SON CONTENEDORES DE PROPIEDADES, DONDE UNA PROPIEDAD TIENE NOMBRE Y VALOR
+
 let producto = {
      nombreProducto: "laptop",
      precio: 45,
      disponible: true
 }
+
+//UN OBJETO ES UNA VARIABLE QUE CONTENGA TODAS LAS PROPIEDADES ANTERIORES
 
 console.log("mi primer producto:",producto)
 
@@ -40,6 +44,13 @@ producto.precio = 25;
 delete producto.disponible;
 
 console.log("borrado de disp producto:",producto);
+
+// MODIFICAR. LLAMAMOS A LA PROPIEDAD Y ASIGNAMOS NUEVO VALOR
+
+producto.precio=500;
+
+console.log("MODIFICAMOS PRECIO a producto: ",producto);
+
 
 // CREAR VARIABLES A PARTIR DE PROPIEDADES
 
@@ -78,15 +89,24 @@ let {nombrePlaya,ubicacion,recomendable,temperaturaAgua}=playa;
 
 console.log(`en la playa ${nombrePlaya} que esta en ${ubicacion} el agua esta a ${temperaturaAgua} grados. Te la recomiendo: ${recomendable}`);
 
+// UNA VARIABLE CON CONST NO SE PUEDE MODIFICAR
+
+// PERO LAS PROPIEDADES DE UN OBJETO CREADO CON CONST SI PODEMOS MODIFICARLAS
 
 
-// CONST NO FUNCIONA CON OBJETOS, SI QUIERES CONGELADOR Y QUE NO SE PUEDA MODIFICAR SE USA FREEZE
+// MÉTODOS PARA LOS OBJETOS
+
+//     UN OBJETO A PESAR DE ESTAR CREADO CON CONST, SI QUE PODEMOS
+//     AÑADIR Y ELIMINAR PROPIEDADES. ES UNA CARACTERISTICA DE LOS OBJETOS
+
+//EJERCICIO
 
 // Object.freeze(producto);
 // producto.congelado="intentamos congelarlo"; 
 
 // console.log("intento modificar propiedad con freeze:",producto); 
 
+//Object.freeze(objeto); - NO ME PERMITE AÑADIR PROPIEDADES NI MODIFICAR MI OBEJTO
 
 // PARA SABER SI UN OBJETO ESTA CONGELADO??
 
