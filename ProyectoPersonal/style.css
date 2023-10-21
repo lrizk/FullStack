@@ -38,8 +38,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7758dd', end
 
 /* ESTILOS DEL HEADER */
 
-/* ME FALTA BUSCAR EL ESTILO DE LA FUENTE PRINCIPAL Y LA SECUNDARIO SERIA OPEN SANS */
-
 [src="../ProyectoPersonal/img/FitSelf-11.png"]{
     width: 100px;
     height: 100px;
@@ -178,6 +176,7 @@ p{
     justify-content: center;
     color: var(--colorPrincipal);
     font-family: var(--fuentePrimaria);
+    text-align: center;
 }
 
 
