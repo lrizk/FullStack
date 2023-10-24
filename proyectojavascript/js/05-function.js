@@ -104,9 +104,26 @@ restar(45,23);
 
 // EJERCICIO
 
+function multiplicar (n1,n2){
+    return n1*n2; //RETORNA UN VALOR
+}
 
+let valorRetornado=multiplicar(2,8);
+console.log(`el valor retornado es: ${valorRetornado}`);
 
+//EJERCICIO: UNA FUNCION MAS COMPLEJA
 
+let total=0;
+
+function agregarCarrito(precio){
+    return total+=precio;
+}
+
+agregarCarrito(200);
+agregarCarrito(300);
+agregarCarrito(600);
+
+console.log("el total a pagar es de:",total)
 
 // EJERCICIO
 
@@ -114,7 +131,7 @@ let descuento=0.2;
 let totalAhorro=0;
 
 function calcularDescuento(z){
-    totalAhorro+=(z*descuento)
+    return totalAhorro+=(z*descuento)
 }
 
 calcularDescuento(100);
@@ -122,7 +139,6 @@ calcularDescuento(120);
 calcularDescuento(350);
 
 console.log(`el descuento total es de ${totalAhorro}`)
-
 
 // METODOS DE PROPIEDAD
 // LO QUE VA ENTRE PARENTESIS DESPUES DE FUNCTION ES UN ARGUMENTO RELATIVO A LA FUNCION QUE CREAS
@@ -189,7 +205,7 @@ console.log(triplicar(6));
             // let triplicarFlecha = (numero=1) => numero*numero*numero;
 
             // let valorTriplicado2 = triplicarFlecha(12);
-            // console.log(valorTriplicado2) 
+            // console.log(valorTriplicado2)
 
 // SI SOLO HAY UNA LINEA DE CODIGO LA QUITAMOS
 
@@ -248,7 +264,7 @@ console.log("USO DE REDUCE", resultado);
 
 //PONER CON ARROW FUNCTION
 
-resultado = carrito.reduce((total, producto)=> total + producto.precio, 0); // EL VALOR DEL INDICE DONDE INICIA
+resultado = carrito.reduce((total, producto)=> total + producto.precio,0); // EL VALOR DEL INDICE DONDE INICIA
 console.log("USO DE REDUCE CON ARROW FUNCTION", resultado);
 
 // EJERCICIO
@@ -263,7 +279,7 @@ let sumaExpresion=function(n1,n2,n3){
     console.log(n1+n2+n3);
 }
 
-sumaExpresion(4,8,29);
+sumaExpresion(4,8,25);
 
 let sumaFlecha1=(n1,n2,n3)=>console.log(n1+n2+n3);
 
@@ -312,3 +328,36 @@ let eliminarUltimo=(x)=>x.pop();
 eliminarUltimo(arrayArrow)
 
 console.log(arrayArrow);
+
+
+// FILTER: PARA FILTRAR
+
+resultado = carrito.filter(function (producto) {
+    return producto.precio > 400
+});
+console.log("USO DE FILTER", resultado);
+
+
+//FILTER CON ARROW
+
+resultado = carrito.filter( producto=>producto.precio > 400);
+console.log("USO DE FILTER CON ARROW FUNCTION", resultado);
+
+
+//ULTIMO EJERCICIO ARROW CON LENGTH
+
+let caracteres1=(x,y)=>console.log("resultado caracteres2:", (x.length+y.length));
+
+caracteres1("gatos","flores");
+
+
+
+//EJERCICIO ARROW CON POP PARA QUIITAR ELEMENTO DE UN ARRAY
+
+let quitarUltimo=x=>x.pop();
+let myArray=[1,2,3,4,5];
+
+quitarUltimo(myArray); //ESTE ES EL PRIMER ELEMENTO QUE NOS QUITA DEL ARRAY 1,2,3,4
+quitarUltimo(myArray); //SE ACTUALIZA Y ME QUITA EL SIGUIENTE ELEMENTO 1,2,3
+
+console.log(myArray)
