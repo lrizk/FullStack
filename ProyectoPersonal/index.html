@@ -107,20 +107,41 @@
 
     <!-- SECCION DE VER PLANES -->
 
-    <section class="imagenPlanes contenedor">
 
-
-        <!-- <div class="carousel">
-    <div class="carousel-inner">
-      <img src="./img/gente-tiro-completo-entrenando-juntas-gimnasio.jpg" alt="Imagen 1">
-      <img src="./img/mujer-levantando-barra.jpg" alt="Imagen 2">
-      <img src="./img/pareja-haciendo-culturismo.jpg" alt="Imagen 3">
-    </div>
-  </div> -->
-
-        <a class="botonPlanes gradiente2" href="">VER PLANES</a>
-
+    <section class="contenedor">
+        <div class="carrusel">
+            <img src="./img/mujer-levantando-barra.jpg" alt="imagen1">
+            <img src="./img/gente-tiro-completo-entrenando-juntas-gimnasio.jpg" alt="imagen2">
+            <img src="./img/pareja-haciendo-culturismo.jpg" alt="imagen3">
+            <!-- Agrega más imágenes aquí -->
+        </div>
     </section>
+
+    <script>
+        // Obtén una referencia al carrusel
+        var carrusel = document.querySelector('.carrusel');
+
+        // Configura la velocidad de desplazamiento en milisegundos
+        var velocidad = 2000; // 2 segundos
+
+        // Función para desplazar el carrusel automáticamente
+        function desplazarCarrusel() {
+            // Calcula la anchura de una imagen en el carrusel
+            var anchuraImagen = carrusel.querySelector('.carrusel img').offsetWidth;
+
+            // Desplaza el carrusel hacia la izquierda
+            carrusel.scrollLeft += anchuraImagen;
+
+            // Si llegamos al final del carrusel, volvemos al principio
+            // if (carrusel.scrollLeft >= carrusel.scrollWidth - anchuraImagen) {
+            //     carrusel.scrollLeft = -1;
+            // }
+        }
+
+        // Inicia el desplazamiento automático del carrusel
+        setInterval(desplazarCarrusel, velocidad);
+    </script>
+
 
     <!-- SECCION FOOTER -->
 
@@ -149,7 +170,7 @@
         </div>
 
     </footer>
-
+    <!-- <script src="./script.js"></script> -->
 </body>
 
 </html>
