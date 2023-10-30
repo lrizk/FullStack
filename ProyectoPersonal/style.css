@@ -4,15 +4,14 @@
     --colorTercero: #9A82C1;
     --fuentePrimaria: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --fuenteSecundaria: 'Young Serif', serif;
-    /* --gradienteRadial: background: rgba(243,177,79,1);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(243,177,79,1) 0%, rgba(255,255,255,1) 68%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(243,177,79,1)), color-stop(68%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(243,177,79,1) 0%, rgba(255,255,255,1) 68%, rgba(255,255,255,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(243,177,79,1) 0%, rgba(255,255,255,1) 68%, rgba(255,255,255,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(243,177,79,1) 0%, rgba(255,255,255,1) 68%, rgba(255,255,255,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(243,177,79,1) 0%, rgba(255,255,255,1) 68%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3b14f', endColorstr='#ffffff', GradientType=1 );
-     */
+    /* --gradienteRadial: background: rgba(242,175,74,1);
+   background: -moz-radial-gradient(center, ellipse cover, rgba(242,175,74,1) 0%, rgba(242,175,74,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 84%);
+   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(242,175,74,1)), color-stop(0%, rgba(242,175,74,1)), color-stop(69%, rgba(255,255,255,1)), color-stop(84%, rgba(255,255,255,1)));
+   background: -webkit-radial-gradient(center, ellipse cover, rgba(242,175,74,1) 0%, rgba(242,175,74,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 84%);
+   background: -o-radial-gradient(center, ellipse cover, rgba(242,175,74,1) 0%, rgba(242,175,74,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 84%);
+   background: -ms-radial-gradient(center, ellipse cover, rgba(242,175,74,1) 0%, rgba(242,175,74,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 84%);
+   background: radial-gradient(ellipse at center, rgba(242,175,74,1) 0%, rgba(242,175,74,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,1) 84%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2af4a', endColorstr='#ffffff', GradientType=1 ); */
 }
 
 /* ESTILOS GENERICOS */
@@ -193,7 +192,7 @@ p {
 .beneficios h2 {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     font-size: 20px;
     font-family: var(--fuentePrimaria);
@@ -206,7 +205,7 @@ p {
     grid: 1fr 1fr / 1fr 1fr;
     height: 400px;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 
@@ -245,7 +244,7 @@ p {
     .cajaB h4 {
         font-size: 9px;
         margin-bottom: 3px;
-        margin-top: 40px;
+        margin-top: 35px;
     }
 
     .cajaB p {
@@ -279,7 +278,9 @@ p {
     /* height: 500px; */
     /* Establece la altura fija en 500px */
     object-fit: cover;
+    border-radius: 20PX;
 }
+
 
 /* .imagenPlanes {
     display: flex;
@@ -294,17 +295,22 @@ p {
 
 
 .botonPlanes {
-    padding: 10px 20px;
-    font-family: var(--fuentePrimaria);
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 20px;
-    color: white;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
     transform: scale(var(--escala, 1));
     transition: transform .25s;
-    display: inline-block;
-    margin-bottom: 20px;
+}
+
+.botonPlanes>.botonVerP {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var();
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: var(--fuentePrimaria);
 }
 
 .botonPlanes:hover {
@@ -321,6 +327,7 @@ p {
     text-transform: capitalize;
     font-family: var(--fuentePrimaria);
     font-weight: 500;
+    margin-top: 70px;
 }
 
 .footerFit {

@@ -42,12 +42,12 @@
                 <a href="">certificaciones</a>
             </div>
 
-            <div class="botonHeader">
+            <!-- <div class="botonHeader">
                 <a href="">contacto</a>
-            </div>
+            </div> -->
 
             <div class="botonHeader">
-                <a href="">asesorias</a>
+                <a href="./asesorias.html">asesorias</a>
             </div>
 
         </div>
@@ -110,36 +110,43 @@
 
     <section class="contenedor">
         <div class="carrusel">
-            <img src="./img/mujer-levantando-barra.jpg" alt="imagen1">
-            <img src="./img/gente-tiro-completo-entrenando-juntas-gimnasio.jpg" alt="imagen2">
-            <img src="./img/pareja-haciendo-culturismo.jpg" alt="imagen3">
+            <img src="./img/entrenamiento-deportivo-estilo-vida-masculino-aptitud-min.jpg" alt="imagen1">
+            <img src="./img/gente-tiro-completo-entrenando-juntas-gimnasio-min.jpg" alt="imagen2">
+            <img src="./img/pareja-haciendo-culturismo-min.jpg" alt="imagen3">
             <!-- Agrega más imágenes aquí -->
         </div>
+
+        <div class="botonPlanes">
+            <a class="botonVerP gradiente2" href="./asesorias.html">VER PLANES</a>
+        </div>
+
     </section>
 
     <script>
         // Obtén una referencia al carrusel
-        var carrusel = document.querySelector('.carrusel');
+// Obtén una referencia al <link>carrusel</link>
+var carrusel = document.querySelector('.carrusel');
 
-        // Configura la velocidad de desplazamiento en milisegundos
-        var velocidad = 2000; // 2 segundos
+// Configura la velocidad de desplazamiento en milisegundos
+var velocidad = 2000; // 2 segundos
 
-        // Función para desplazar el carrusel automáticamente
-        function desplazarCarrusel() {
-            // Calcula la anchura de una imagen en el carrusel
-            var anchuraImagen = carrusel.querySelector('.carrusel img').offsetWidth;
+// Función para desplazar el <link>carrusel</link> automáticamente
+function desplazarCarrusel() {
+  // Calcula la anchura de una imagen en el <link>carrusel</link>
+  var anchuraImagen = carrusel.querySelector('img').offsetWidth;
 
-            // Desplaza el carrusel hacia la izquierda
-            carrusel.scrollLeft += anchuraImagen;
+  // Desplaza el <link>carrusel</link> hacia la izquierda
+  carrusel.scrollLeft += anchuraImagen;
 
-            // Si llegamos al final del carrusel, volvemos al principio
-            // if (carrusel.scrollLeft >= carrusel.scrollWidth - anchuraImagen) {
-            //     carrusel.scrollLeft = -1;
-            // }
-        }
+  // Si llegamos al final del <link>carrusel</link>, volvemos al principio
+  if (carrusel.scrollLeft >= carrusel.scrollWidth - anchuraImagen) {
+    carrusel.scrollLeft = 0;
+  }
+}
 
-        // Inicia el desplazamiento automático del carrusel
-        setInterval(desplazarCarrusel, velocidad);
+// Inicia el desplazamiento automático del <link>carrusel</link>
+setInterval(desplazarCarrusel, velocidad);
+
     </script>
 
 
@@ -170,7 +177,7 @@
         </div>
 
     </footer>
-    <!-- <script src="./script.js"></script> -->
+    
 </body>
 
 </html>
