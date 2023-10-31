@@ -28,7 +28,10 @@
     <header class="seccionHeader contenedor">
 
         <div class="logoFitself">
-            <img src="./img/FitSelf-11.png" />
+            <a href="./index.html">
+                <img src="./img/FitSelf-11.png" alt="FitSelf Logo"/>
+              </a>
+            <!-- <img src="./img/FitSelf-11.png" /> -->
         </div>
 
 
@@ -110,9 +113,10 @@
 
     <section class="contenedor">
         <div class="carrusel">
-            <img src="./img/entrenamiento-deportivo-estilo-vida-masculino-aptitud-min.jpg" alt="imagen1">
-            <img src="./img/gente-tiro-completo-entrenando-juntas-gimnasio-min.jpg" alt="imagen2">
-            <img src="./img/pareja-haciendo-culturismo-min.jpg" alt="imagen3">
+            <img src="./img/meghan-holmes-buWcS7G1_28-unsplash.jpg" alt="imagen1">
+            <img src="./img/john-arano-h4i9G-de7Po-unsplash.jpg" alt="imagen2">
+            <img src="./img/sam-moghadam-khamseh-0sa8D74iodI-unsplash.jpg" alt="imagen3">
+            <img src="./img/sporlab-XiZ7pRvCzro-unsplash.jpg" alt="imagen4">
             <!-- Agrega más imágenes aquí -->
         </div>
 
@@ -122,29 +126,32 @@
 
     </section>
 
+
     <script>
-        // Obtén una referencia al carrusel
-// Obtén una referencia al <link>carrusel</link>
+
 var carrusel = document.querySelector('.carrusel');
 
-// Configura la velocidad de desplazamiento en milisegundos
-var velocidad = 2000; // 2 segundos
+var imagenes = carrusel.querySelectorAll('img');
 
-// Función para desplazar el <link>carrusel</link> automáticamente
+var velocidad = 2000; 
+
+var indice = 0;
+
 function desplazarCarrusel() {
-  // Calcula la anchura de una imagen en el <link>carrusel</link>
-  var anchuraImagen = carrusel.querySelector('img').offsetWidth;
+  // Oculta la imagen actual
+  imagenes[indice].style.display = 'none';
 
-  // Desplaza el <link>carrusel</link> hacia la izquierda
-  carrusel.scrollLeft += anchuraImagen;
+  // Avanza al siguiente índice
+  indice = (indice + 1) % imagenes.length;
 
-  // Si llegamos al final del <link>carrusel</link>, volvemos al principio
-  if (carrusel.scrollLeft >= carrusel.scrollWidth - anchuraImagen) {
-    carrusel.scrollLeft = 0;
-  }
+  // Muestra la nueva imagen
+  imagenes[indice].style.display = 'block';
 }
 
-// Inicia el desplazamiento automático del <link>carrusel</link>
+// Llama a la función para mostrar la primera imagen
+imagenes[indice].style.display = 'block';
+
+// Configura un temporizador para avanzar automáticamente al siguiente
 setInterval(desplazarCarrusel, velocidad);
 
     </script>

@@ -45,7 +45,7 @@
 
 /* ESTILOS DEL HEADER */
 
-[src="../ProyectoPersonal/img/FitSelf-11.png"] {
+.logoFitself a img {
     width: 100px;
     height: 100px;
 }
@@ -205,6 +205,7 @@ p {
     grid: 1fr 1fr / 1fr 1fr;
     height: 400px;
     align-items: center;
+    /* margin-top: 5px; */
     margin-bottom: 60px;
 }
 
@@ -230,7 +231,6 @@ p {
 
     .beneficios h2 {
         font-size: 15px;
-        margin-bottom: 15px;
     }
 
     .gridBeneficios {
@@ -275,6 +275,7 @@ p {
 
 .carrusel img {
     width: 100%;
+    height: 300px;
     /* height: 500px; */
     /* Establece la altura fija en 500px */
     object-fit: cover;
@@ -318,6 +319,36 @@ p {
     color: white;
 }
 
+@media (max-width:768px) {
+    .carrusel {
+        display: flex;
+        overflow: hidden;
+    }
+    
+    .carrusel img {
+        width: 100%;
+        height: auto;
+        /* height: 500px; */
+        /* Establece la altura fija en 500px */
+        object-fit: cover;
+        border-radius: 20PX;
+    }
+
+    .botonPlanes{
+        margin-top: -40px;
+    }
+
+    .botonPlanes>.botonVerP {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        background-color: var();
+        border-radius: 20px;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-family: var(--fuentePrimaria);
+    }
+}
 
 /* SECCION FOOTER */
 
