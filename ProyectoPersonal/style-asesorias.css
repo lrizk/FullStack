@@ -119,3 +119,14 @@ a:hover {
 
 }
 
+/* ESTILOS DE PLANES */
+
+h1{
+    font-family: var(--fuenteSecundaria);
+    font-size: 25px;
+    color: var(--colorPrincipal);
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+}
