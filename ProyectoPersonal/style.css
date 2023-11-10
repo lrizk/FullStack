@@ -68,7 +68,7 @@
     justify-content: flex-end;
     align-items: center;
     max-width: 75%;
-    font-size: 15px;
+    
 }
 
 .botonHeader a {
@@ -77,6 +77,7 @@
     text-decoration: none;
     color: var(--colorPrincipal);
     transition: 0.5s;
+    font-size: 15px;
 }
 
 a:hover {
@@ -118,17 +119,14 @@ a:hover {
         margin-bottom: 15px;
     }
 
-    .enlacesHeader a {
-        font-size: 8px;
+    .botonHeader a{
+        font-size: 12px;
         margin-left: 8px;
     }
 
 }
 
-
 /* ESTILOS DE SECCION ESPACIO SEGURO */
-
-
 
 .seccionEspacioSeguro {
     background-color: rgba(235, 171, 82, 1);
@@ -397,9 +395,17 @@ a img {
     color: var(--colorPrincipal);
     margin-top: 20px;
     transition: 0.5s;
+    font-size: 12px;
 }
 
 .linkPoliticas a:hover{
     color: var(--colorSecundario);
     
 }
+
+/* @media (max-with:768px) {
+    .linkPoliticas a{
+        display: flex;
+        flex-direction: row;
+    }
+} */
