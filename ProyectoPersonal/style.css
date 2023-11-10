@@ -390,3 +390,16 @@ a img {
     opacity: 0.8;
     /* Cambia la opacidad al pasar el cursor sobre la imagen */
 }
+
+.linkPoliticas a{
+    font-family: var(--fuentePrimaria);
+    text-decoration: none;
+    color: var(--colorPrincipal);
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.linkPoliticas a:hover{
+    color: var(--colorSecundario);
+    
+}
