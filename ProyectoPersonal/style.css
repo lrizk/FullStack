@@ -207,6 +207,10 @@ p {
     margin-bottom: 60px;
 }
 
+.icono{
+    width: 30px;
+    height: 30px;
+}
 
 .cajaB {
     display: flex;
@@ -229,7 +233,7 @@ p {
     filter: blur(10px);
   transform: scale(0.9, 0.9);
 }
-}
+
 
 @media (max-width:768px) {
 
@@ -279,7 +283,7 @@ p {
 
 .carrusel img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     /* height: 500px; */
     /* Establece la altura fija en 500px */
     object-fit: cover;
@@ -363,6 +367,7 @@ p {
     font-family: var(--fuentePrimaria);
     font-weight: 500;
     margin-top: 70px;
+    margin-bottom: 10px;
 }
 
 .footerFit {
