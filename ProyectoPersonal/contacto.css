@@ -126,246 +126,100 @@ a:hover {
 
 }
 
-/* ESTILOS DE SECCION ESPACIO SEGURO */
+/*SECCION CONTACTO*/
 
-.seccionEspacioSeguro {
-    background-color: rgba(235, 171, 82, 1);
-    /* font-family: var(--fuenteSecundaria); */
-    /* height: 200px; */
-    border-radius: 10px;
-}
-
-/* :hover{
-
-    filter: blur(2px);
-} */
-
-.textosbanner {
-    text-align: center;
-    justify-content: center;
-    color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-h1 {
-    font-size: 30px;
-    font-family: var(--fuenteSecundaria);
-    font-weight: 500;
-    margin: 0;
-    line-height: 35px;
-}
-
-p {
-    padding-top: 10px;
-    margin: 0;
-    font-size: 15px;
-    font-family: var(--fuentePrimaria);
-}
-
-@media (max-width:768px) {
-    .contenedor {
-        max-width: 98%;
-    }
-
-    .textosbanner {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-
-    .h1 {
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 18px;
-    }
-
-    p {
-        font-size: 12px;
-        padding-top: 9px;
-    }
-}
-
-/* ESTILOS DE SECCION BENEFICIOS */
-
-.beneficios h2 {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: var(--fuentePrimaria);
-    font-weight: 700;
-    color: var(--colorPrincipal);
-}
-
-.gridBeneficios {
-    display: grid;
-    grid: 1fr 1fr / 1fr 1fr;
-    height: 400px;
-    align-items: center;
-    /* margin-top: 5px; */
-    margin-bottom: 60px;
-}
-
-.icono{
-    width: 40px;
-    height: 40px;
-
-}
-
-.cajaB {
+.card {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px #d0c3e7;
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--colorPrincipal);
-    font-family: var(--fuentePrimaria);
+    margin-top: 80px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 400;
     text-align: center;
-}
-
-.cajaB h4 {
-    text-transform: uppercase;
-    font-size: 13px;
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-
-.caja4:hover{
-    filter: blur(10px);
-  transform: scale(0.9, 0.9);
-}
-
-
-@media (max-width:768px) {
-
-    .beneficios h2 {
-        font-size: 15px;
-    }
-
-    .icono{
-        width: 25px;
-        height: 25px;
-        margin-top: 25px;
-    }
-
-    .gridBeneficios {
-        display: flex;
-        flex-direction: column;
-        height: 400px;
-        padding-left: 5px;
-        padding-right: 5px;
-
-
-    }
-
-    .cajaB h4 {
-        font-size: 9px;
-        margin-bottom: 3px;
-        margin-top: 10px;
-    }
-
-    .cajaB p {
-        margin-top: -5px;
-        font-size: 7px;
-
-    }
-}
-
-/* SECCION IMAGEN PLANES Y BOTON */
-
-/* .imagenPlanes{
+    font-family: var(--fuenteSecundaria);
+    color: #7858DD;
+  }
+  
+  .form {
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
-    align-items: end;
-    background-image: url(./img/gente-tiro-completo-entrenando-juntas-gimnasio.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 220px;
-    border-radius: 10px;
-    margin-bottom: 80px;
-} */
-
-.carrusel {
-    display: flex;
-    overflow: hidden;
-}
-
-.carrusel img {
+    flex-direction: column;
+  }
+  
+  .group {
+    position: relative;
+  }
+  
+  .form .group label {
+    font-size: 14px;
+    color: #7858DD;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #7858DD;
+    transition: all .3s ease;
+  }
+  
+  .form .group input,
+  .form .group textarea {
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid #7858DD;
+    margin-bottom: 20px;
+    outline: 0;
     width: 100%;
-    height: 350px;
-    /* height: 500px; */
-    /* Establece la altura fija en 500px */
-    object-fit: cover;
-    border-radius: 20PX;
-}
-
-
-/* .imagenPlanes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden; 
-    margin-bottom: 80px;
-  } */
-
-
-.botonPlanes {
-    margin-top: -50px;
-    display: flex;
-    justify-content: center;
-    transform: scale(var(--escala, 1));
-    transition: transform .25s;
-}
-
-.botonPlanes>.botonVerP {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: var();
-    border-radius: 20px;
-    font-size: 12px;
-    text-transform: uppercase;
+    background-color: transparent;
+  }
+  
+  .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
     font-family: var(--fuentePrimaria);
-}
-
-.botonPlanes:hover {
-    --escala: 1.1;
-    color: white;
-}
-
-@media (max-width:768px) {
-    .carrusel {
-        display: flex;
-        overflow: hidden;
-    }
+  }
+  
+  .form .group input:focus,
+  .form .group textarea:focus {
+     border-color: var(--colorPrincipal);
+  }
+  
+  .form .group input:focus+ label, .form .group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: var(--colorPrincipal);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--fuentePrimaria);
+  }
+  
+  .form .group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .form button {
+     background-color: var(--colorSecundario);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: var(--fuentePrimaria);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #d98e1e;
+  }
     
-    .carrusel img {
-        width: 100%;
-        height: auto;
-        /* height: 500px; */
-        /* Establece la altura fija en 500px */
-        object-fit: cover;
-        border-radius: 20PX;
-    }
-
-    .botonPlanes{
-        margin-top: -40px;
-    }
-
-    .botonPlanes>.botonVerP {
-        color: white;
-        text-decoration: none;
-        padding: 8px 12px;
-        background-color: var();
-        border-radius: 20px;
-        font-size: 10px;
-        text-transform: uppercase;
-        font-family: var(--fuentePrimaria);
-    }
-}
 
 /* SECCION FOOTER */
 
