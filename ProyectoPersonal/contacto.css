@@ -219,7 +219,13 @@ a:hover {
   .form button:hover {
     background-color: #d98e1e;
   }
+  
+  @media (max-width:768px) {
+    .card{
+        width: 250px;
+    }
     
+  }
 
 /* SECCION FOOTER */
 
@@ -264,6 +270,16 @@ a img {
     margin-top: 20px;
     transition: 0.5s;
     font-size: 12px;
+}
+
+@media (max-width:768px) {
+    /* .linkPoliticas{
+        margin-top: 40px;
+    } */
+
+    .footerFit{
+        margin-top: 40px;
+    }
 }
 
 .linkPoliticas a:hover{
