@@ -236,7 +236,6 @@ a:hover {
     font-family: var(--fuentePrimaria);
     font-weight: 500;
     margin-top: 70px;
-    margin-bottom: 10px;
 }
 
 .footerFit {
@@ -244,6 +243,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 123px;
 }
 
 
@@ -286,10 +286,3 @@ a img {
     color: var(--colorSecundario);
     
 }
-
-/* @media (max-with:768px) {
-    .linkPoliticas a{
-        display: flex;
-        flex-direction: row;
-    }
-} */
